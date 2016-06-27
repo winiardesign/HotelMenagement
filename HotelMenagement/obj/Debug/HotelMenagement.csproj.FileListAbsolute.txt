@@ -1,0 +1,36 @@
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\bin\Debug\HotelMenagement.exe.config
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\bin\Debug\HotelMenagement.exe
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\bin\Debug\HotelMenagement.pdb
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.csprojResolveAssemblyReference.cache
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\MainWindow.g.cs
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\App.g.cs
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement_MarkupCompile.cache
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement_MarkupCompile.lref
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\MainWindow.baml
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.g.resources
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.Properties.Resources.resources
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.csproj.GenerateResource.Cache
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.exe
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.pdb
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\bin\Debug\MySql.Data.dll
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\otherWindows\aboutAutorWindow.g.cs
+C:\Users\Marcin\Desktop\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\otherWindows\aboutAutorWindow.baml
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\bin\Debug\HotelMenagement.exe.config
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.exe
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.pdb
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\bin\Debug\HotelMenagement.exe
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\bin\Debug\HotelMenagement.pdb
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\bin\Debug\MySql.Data.dll
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.csprojResolveAssemblyReference.cache
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\MainWindow.g.cs
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\otherWindows\aboutAutorWindow.g.cs
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\otherWindows\addReservation.g.cs
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\App.g.cs
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement_MarkupCompile.cache
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement_MarkupCompile.lref
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\MainWindow.baml
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\otherWindows\aboutAutorWindow.baml
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\otherWindows\addReservation.baml
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.g.resources
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.Properties.Resources.resources
+C:\Users\Marcin\Dysk Google\programowanie_cwiczenia\WPF_projekty\hotel\HotelMenagement\HotelMenagement\obj\Debug\HotelMenagement.csproj.GenerateResource.Cache

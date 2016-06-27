@@ -1,0 +1,160 @@
+﻿<Window x:Name="windowMain" x:Class="HotelMenagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelMenagement"
+        mc:Ignorable="d"
+        Title="Hotel System Menagement" Height="793" Width="1109" WindowStartupLocation="CenterScreen">
+
+
+    <Window.Background>
+        <ImageBrush ImageSource="images/hotel_UI.jpg"/>
+    </Window.Background>
+
+    <Window.Resources>
+        <Style x:Key="MyButton" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="0" BorderBrush="Black" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.8" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+
+
+    <Grid Height="319" VerticalAlignment="Bottom">
+        
+        
+        <!-- system login -->
+        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="25" Margin="777,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Background="{x:Null}" BorderThickness="0" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Black" FontSize="14"/>
+        <PasswordBox x:Name="BoxPassword"  HorizontalAlignment="Left"  Margin="777,83,0,0" VerticalAlignment="Top" Width="166" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" SelectionBrush="{x:Null}"/>
+        <Button x:Name="btnButtonSign" Content="ZALOGUJ" Style="{StaticResource MyButton}" HorizontalAlignment="Left" Height="25" Margin="777,133,0,0" VerticalAlignment="Top" Width="123" Background="{x:Null}" BorderThickness="0"  BorderBrush="{x:Null}" FontSize="13" Click="button_Click" FontFamily="Franklin Gothic Medium"/>
+       
+        
+        
+        <!-- menu and its content -->
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="35" BorderThickness="0" Margin="0,-435,0,0" VerticalAlignment="Top" Width="1101" Background="{x:Null}">
+            <MenuItem Header="" Width="15"/>
+            <MenuItem Header="Zarządzaj" Height="35" Width="100" FontSize="14" BorderThickness="0" Background="{x:Null}" Foreground="#FFE5CD95" FontFamily="Franklin Gothic Medium" FontWeight="Bold">
+                <MenuItem Header="Cennik " Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="180" Height="28"/>
+            </MenuItem>
+            <MenuItem Header="Restauracja" Height="35" Width="110" BorderThickness="0" FontSize="14" Background="{x:Null}" Foreground="#FFE5CD95" FontFamily="Franklin Gothic Medium" FontWeight="Bold">
+                <MenuItem Header="Produkty " Margin="0,0,-75,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="180" Height="28"/>
+                <MenuItem Header="Drinki " Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="180" Height="28"/>
+                <MenuItem Header="Dania " Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="180" Height="28"/>
+                <MenuItem Header="Alkohole " Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="180" Height="28"/>
+                <MenuItem Header="Stany " Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="180" Height="28"/>
+            </MenuItem>
+            <MenuItem Header="Pracownicy" Height="35" Width="110" BorderThickness="0" FontSize="14" Background="{x:Null}" Foreground="#FFE5CD95" FontFamily="Franklin Gothic Medium" FontWeight="Bold">
+                <MenuItem Header="Cennik " Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="180" Height="28"/>
+            </MenuItem>
+            <MenuItem Header="Opcje" Height="35" Width="75" BorderThickness="0" FontSize="14" Background="{x:Null}" Foreground="#FFE5CD95" FontFamily="Franklin Gothic Medium" FontWeight="Bold">
+                <MenuItem Header="Cennik " Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="180" Height="28"/>
+            </MenuItem>
+            <MenuItem Header="O Programie" Height="35" Width="110" BorderThickness="0" FontSize="14" Background="{x:Null}" Foreground="#FFE5CD95" FontFamily="Franklin Gothic Medium" FontWeight="Bold">
+                <MenuItem Header="Start" Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="180" Height="28"/>
+                <MenuItem Header="Częste pytania" Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="220" Height="28"/>
+                <MenuItem x:Name="menuItemAutor" Header="O Autorze" Margin="0,0,-55,0" BorderThickness="0" Background="#FF614434" HorizontalAlignment="Left" Width="220" Height="28" Click="MenuItemAutor_Click"/>
+            </MenuItem>
+        </Menu>
+        
+        
+        <!-- data active user, time and time -->
+        <Label x:Name="nameUserLogOut" Content="" HorizontalAlignment="Left" Height="45" Margin="955,-215,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontFamily="Franklin Gothic Medium" Background="{x:Null}" Foreground="#FFAAAAAA"/>
+        <Button x:Name="btnLogOut" Content="Wyloguj" HorizontalAlignment="Left" Height="30" Margin="960,-245,0,0" VerticalAlignment="Top" Width="100" FontFamily="Franklin Gothic Medium" FontSize="13" IsEnabled="False" Click="btnLogOut_Click"/>
+        <Label x:Name="lblActiveText" Content="Aktywny użytkownik:" HorizontalAlignment="Left" Height="30" Margin="10,283,0,0" VerticalAlignment="Top" Width="160" FontSize="13" FontFamily="Adobe Garamond Pro" Foreground="#FF7B0026" FontWeight="Bold"/>
+        <Label x:Name="bottomActiveUser" Content="" HorizontalAlignment="Left" Height="30" Margin="131,283,0,0" VerticalAlignment="Top" Width="160" FontSize="13" FontFamily="Adobe Garamond Pro" Foreground="#FFAD1818" FontWeight="Bold"/>
+        <Label x:Name="lblHourDate" Content="Data i godzina:" HorizontalAlignment="Left" Height="30" Margin="856,283,0,0" VerticalAlignment="Top" Width="150" FontSize="13" FontFamily="Adobe Garamond Pro" Foreground="#FF7B0026" FontWeight="Bold"/>
+        <Label x:Name="lblHourDate_Copy" Content="2016-06-22  13:52" HorizontalAlignment="Left" Height="30" Margin="941,283,0,0" VerticalAlignment="Top" Width="150" FontSize="13" FontFamily="Adobe Garamond Pro" Foreground="#FF7B0026" FontWeight="Bold"/>
+        
+        
+        
+        <!-- battony for top menu with pink images -->
+        <Button x:Name="btnAddReservation" Style="{StaticResource MyButton}" Content="Dodaj&#xD;&#xA;Rezerwację" HorizontalAlignment="Left" Height="55" Margin="72,-366,0,0" VerticalAlignment="Top" Width="115" FontFamily="Adobe Garamond Pro" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}" Click="btnAddReservation_Click"/>
+        <Button x:Name="btnAddAtractive" Style="{StaticResource MyButton}" Content="Dodaj&#xA;Atrakcję" HorizontalAlignment="Left" Height="55" Margin="247,-367,0,0" VerticalAlignment="Top" Width="115" FontFamily="Adobe Garamond Pro" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnRestaurant" Style="{StaticResource MyButton}" Content="Restauracja&#xA;wyżywienie" HorizontalAlignment="Left" Height="55" Margin="424,-368,0,0" VerticalAlignment="Top" Width="115" FontFamily="Adobe Garamond Pro" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnEmployees" Style="{StaticResource MyButton}" Content="Pracownicy&#xA;obsługa" HorizontalAlignment="Left" Height="55" Margin="594,-368,0,0" VerticalAlignment="Top" Width="115" FontFamily="Adobe Garamond Pro" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnBill" Style="{StaticResource MyButton}" Content="Płatność&#xA;rachunki" HorizontalAlignment="Left" Height="55" Margin="756,-366,0,0" VerticalAlignment="Top" Width="115" FontFamily="Adobe Garamond Pro" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Button x:Name="btnSettings" Style="{StaticResource MyButton}" Content="Ustawienia&#xA;konta" HorizontalAlignment="Left" Height="55" Margin="944,-367,0,0" VerticalAlignment="Top" Width="115" FontFamily="Adobe Garamond Pro" FontSize="14" Background="{x:Null}" BorderBrush="{x:Null}"/>
+       
+        
+        
+        <!-- tabControl for Start page -->
+        <TabControl x:Name="tabContStart" HorizontalAlignment="Left" Height="478" Margin="0,-204,0,0" BorderThickness="0" VerticalAlignment="Top" Width="1101" Background="#FFFFF7E7" IsEnabled="False" Visibility="Hidden">
+            <TabItem Header="Przyjazd Gości" HorizontalAlignment="Left" Margin="0,0,0,-5" Width="120">
+                <Grid Background="White" Margin="0,-2,0,0">
+                    
+                    <!-- page first Start -->
+                    <GroupBox x:Name="groupBox" Header="Przyjazdy Gości" HorizontalAlignment="Left" Height="125" Margin="12,20,0,0" VerticalAlignment="Top" Width="300" BorderBrush="#4C814C16" Background="White">
+                        <Canvas HorizontalAlignment="Left" Height="127" Margin="-9,-18,-6,-6" VerticalAlignment="Top" Width="303">
+                            <Label x:Name="label" Content="Dzisiaj:" Height="29" Canvas.Left="19" Canvas.Top="25" Width="65" FontSize="13"/>
+                            <Label x:Name="label_Copy" Content="W ciągu 7 dni:" Height="29" Canvas.Left="19" Canvas.Top="55" Width="95" FontSize="13"/>
+                            <Label x:Name="label_Copy1" Content="Wszyscy goście:" Height="29" Canvas.Left="19" Canvas.Top="86" Width="105" FontSize="13"/>
+                            <Label x:Name="label_Copy2" Content="12" Height="29" Canvas.Left="128" Canvas.Top="25" Width="58" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Red" FontWeight="Bold"/>
+                            <Label x:Name="label_Copy3" Content="36" Height="29" Canvas.Left="128" Canvas.Top="55" Width="58" FontSize="13" Background="{x:Null}" Foreground="Red" FontWeight="Bold"/>
+                            <Label x:Name="label_Copy4" Content="126" Height="29" Canvas.Left="128" Canvas.Top="86" Width="58" FontSize="13" Foreground="Red" FontWeight="Bold"/>
+                            <Button x:Name="button" Content="Zobacz" Height="27" Canvas.Left="195" Canvas.Top="24" Width="85"/>
+                            <Button x:Name="button_Copy" Content="Zobacz" Height="27" Canvas.Left="195" Canvas.Top="54" Width="85"/>
+                            <Button x:Name="button_Copy1" Content="Zobacz" Height="27" Canvas.Left="195" Canvas.Top="84" Width="85"/>
+                        </Canvas>
+                    </GroupBox>
+                    
+                    
+                    <!-- Search and filter -->
+                    <GroupBox x:Name="groupBox_Copy" Header="Szukaj Filtruj" HorizontalAlignment="Left" Height="255" Margin="327,20,0,0" VerticalAlignment="Top" Width="300" BorderBrush="#4C814C16">
+                        <Canvas HorizontalAlignment="Left" Height="248" Margin="-5,-9,-6,-6" VerticalAlignment="Top" Width="299"/>
+                    </GroupBox>
+                    
+                    
+                    <!-- all the guests -->
+                    <GroupBox x:Name="groupBox_Copy1" Header="Wszyscy Goście" HorizontalAlignment="Left" Height="125" Margin="12,150,0,0" VerticalAlignment="Top" Width="300" BorderBrush="#4C814C16">
+                        <Canvas HorizontalAlignment="Left" Height="125" Margin="-6,-16,-6,-6" VerticalAlignment="Top" Width="300"/>
+                    </GroupBox>
+                    
+                    
+                    <!-- reservation details-->
+                    <GroupBox x:Name="groupBox1" Header="Zobacz szczegóły rezerwacji" HorizontalAlignment="Left" Height="164" Margin="12,280,0,0" VerticalAlignment="Top" Width="615" BorderBrush="#4C814C16">
+                        <Canvas HorizontalAlignment="Left" Height="157" Margin="-5,-9,-6,-6" VerticalAlignment="Top" Width="614">
+                            <Button x:Name="btnStartUsun" Content="Usuń" Height="27" Canvas.Left="515" Canvas.Top="121" Width="85"/>
+                            <Button x:Name="btnStartEdit" Content="Edytuj" Height="27" Canvas.Left="420" Canvas.Top="121" Width="85"/>
+                            <Button x:Name="btnStartDetails" Content="Szczegóły" Height="27" Canvas.Left="324" Canvas.Top="121" Width="85"/>
+                        </Canvas>
+                    </GroupBox>
+                    
+                    <!--dataGrid first page Start -->
+                    <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="417" Margin="642,27,0,0" VerticalAlignment="Top" Width="440"/>
+                </Grid>
+            </TabItem>
+            
+            <!-- second page Start tabControl-->
+            <TabItem Header="Wyjazdy " HorizontalAlignment="Left" Margin="0,0,0,-5" Width="95">
+                <Grid Background="White" Margin="0,-2,0,0"/>
+            </TabItem>
+            
+            <!--third page Start tabControl-->
+            <TabItem Header="Imprezy" HorizontalAlignment="Left" Margin="0,0,0,-5" Width="95">
+               <Grid Background="White" Margin="0,-2,0,0"/>
+            </TabItem>
+            
+            <!--fourth page Start tabControl-->
+            <TabItem Header="Wolne Terminy" HorizontalAlignment="Left" Margin="0,0,-20,-5" Width="115">
+                <Grid Background="White" Margin="0,-2,0,0"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
+

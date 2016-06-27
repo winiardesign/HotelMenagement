@@ -1,0 +1,47 @@
+﻿<Window x:Name="addReservationWindow" x:Class="HotelMenagement.otherWindows.addReservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelMenagement.otherWindows"
+        mc:Ignorable="d"
+        Title="Dodaj Rezerwację" Height="617" Width="824" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFF7F7F7">
+        <GroupBox x:Name="groupBox" Header="Dane Rezerwującego" HorizontalAlignment="Left" Height="300" Margin="20,20,0,0" VerticalAlignment="Top" Width="490" BorderBrush="#4C814C16" Background="White">
+            <Canvas HorizontalAlignment="Left" Height="290" Margin="-6,-6,-2,-6" VerticalAlignment="Top" Width="486">
+                <Label x:Name="label334s" Content="Imię osoby rezerwującej" Height="30" Canvas.Left="20" Canvas.Top="13" Width="175" FontSize="13"/>
+                <Label x:Name="label334s_Copy" Content="Nazwisko" Height="30" Canvas.Left="20" Canvas.Top="66" Width="175" FontSize="13"/>
+                <TextBox x:Name="txtNameReservation" Height="27" VerticalContentAlignment="Center" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="41" Width="205" FontSize="13"/>
+                <TextBox x:Name="txtLastNameReservation" VerticalContentAlignment="Center" Height="27" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="91" Width="205" FontSize="13"/>
+                <Label x:Name="label334s_Copy1" Content="Numer pesel" Height="30" Canvas.Left="20" Canvas.Top="118" Width="175" FontSize="13"/>
+                <TextBox x:Name="txtPesselNumber" VerticalContentAlignment="Center" Height="27" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="143" Width="205" FontSize="13"/>
+                <Label x:Name="label334s_Copy2" Content="Numer dowodu osobistego" Height="30" Canvas.Left="20" Canvas.Top="167" Width="175" FontSize="13"/>
+                <TextBox x:Name="txtIdentityNumber" VerticalContentAlignment="Center" Height="27" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="192" Width="205" FontSize="13"/>
+                <Label x:Name="label334s_Copy3" Content="Numer domu" Height="30" Canvas.Left="20" Canvas.Top="215" Width="175" FontSize="13"/>
+                <TextBox x:Name="txtHouseNumber" VerticalContentAlignment="Center" Height="27" Canvas.Left="20" TextWrapping="Wrap" Canvas.Top="240" Width="205" FontSize="13"/>
+                <Label x:Name="label334s_Copy4" Content="Nazwa ulicy" Height="30" Canvas.Left="257" Canvas.Top="13" Width="175" FontSize="13"/>
+                <Label x:Name="label334s_Copy5" Content="Miasto" Height="30" Canvas.Left="257" Canvas.Top="66" Width="175" FontSize="13"/>
+                <TextBox x:Name="txtStreetName" Height="27" VerticalContentAlignment="Center" Canvas.Left="257" TextWrapping="Wrap" Canvas.Top="41" Width="203" FontSize="13"/>
+                <TextBox x:Name="txtCityLive" VerticalContentAlignment="Center" Height="27" Canvas.Left="257" TextWrapping="Wrap" Canvas.Top="91" Width="203" FontSize="13"/>
+                <Label x:Name="label334s_Copy6" Content="Numer pesel" Height="30" Canvas.Left="257" Canvas.Top="118" Width="175" FontSize="13"/>
+                <TextBox x:Name="txtPesselNumber_Copy" VerticalContentAlignment="Center" Height="27" Canvas.Left="257" TextWrapping="Wrap" Canvas.Top="143" Width="203" FontSize="13"/>
+                <Label x:Name="label334s_Copy7" Content="Numer dowodu osobistego" Height="30" Canvas.Left="257" Canvas.Top="167" Width="175" FontSize="13"/>
+                <TextBox x:Name="txtIdentityNumber_Copy" VerticalContentAlignment="Center" Height="27" Canvas.Left="257" TextWrapping="Wrap" Canvas.Top="192" Width="203" FontSize="13"/>
+                <Label x:Name="label334s_Copy8" Content="Numer domu" Height="30" Canvas.Left="257" Canvas.Top="215" Width="175" FontSize="13"/>
+                <TextBox x:Name="txtHouseNumber_Copy" VerticalContentAlignment="Center" Height="27" Canvas.Left="257" TextWrapping="Wrap" Canvas.Top="240" Width="203" FontSize="13"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="groupBox1" Header="Data Rezerwacji" HorizontalAlignment="Left" Height="300" Margin="525,20,0,0" VerticalAlignment="Top" Width="265" Background="White" BorderBrush="#4C814C16">
+            <Canvas HorizontalAlignment="Left" Height="300" Margin="0,-16,-12,-6" VerticalAlignment="Top" Width="265">
+                <DatePicker Height="28" Canvas.Left="32" VerticalContentAlignment="Center" Canvas.Top="52" Width="195" FontSize="15"/>
+                <DatePicker Height="28" Canvas.Left="32" VerticalContentAlignment="Center" Canvas.Top="117" Width="195" FontSize="15"/>
+                <Label x:Name="label" Content="Data przyjazdu" Height="27" Canvas.Left="32" Canvas.Top="25" Width="145" FontSize="13"/>
+                <Label x:Name="label_Copy" Content="Data wyjazdu" Height="28" Canvas.Left="32" Canvas.Top="89" Width="145" FontSize="13"/>
+            </Canvas>
+        </GroupBox>
+        <Button x:Name="button" Content="Wyślij emailem" HorizontalAlignment="Left" Height="31" Margin="665,525,0,0" VerticalAlignment="Top" Width="125"/>
+        <Button x:Name="button_Copy" Content="Drukuj" HorizontalAlignment="Left" Height="31" Margin="538,525,0,0" VerticalAlignment="Top" Width="111"/>
+        <Button x:Name="button_Copy1" Content="Podgląd" HorizontalAlignment="Left" Height="31" Margin="419,525,0,0" VerticalAlignment="Top" Width="102"/>
+
+    </Grid>
+</Window>

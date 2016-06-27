@@ -1,0 +1,13 @@
+﻿<Window x:Name="aboutAutor" x:Class="HotelMenagement.otherWindows.aboutAutorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelMenagement.otherWindows"
+        mc:Ignorable="d"
+        Title="Autor Marcin Winiarski &quot;Hotel Menagement System&quot;" Height="600" Width="600" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="Nazywam się Marcin Winiarski i jestem początkującym programistą.&#xD;&#xA;Moją pasją jest programowanie w języku C#. Szczególnie upodobałem&#xD;&#xA;sobie technologię WPF oraz ASP.NET MVC. To MVC przyciągnęło mnie&#xD;&#xA;do programowania w C#. Od kilku lat bardzo intensywnie interesuję&#xD;&#xA;się projektowaniem i tworzeniem stron internetowych. Zniechęcony &#xD;&#xA;do PHP szukałem innego języka. Chcę zawodowo pracować jako &#xD;&#xA;programista .NET w szczególności MVC, by łączyć pasję jaką jest&#xD;&#xA;programowanie stron z pisaniem aplikacji. &#xD;&#xA;&#xD;&#xA; " HorizontalAlignment="Left" Height="150" Margin="185,60,0,0" VerticalAlignment="Top" Width="397" Background="{x:Null}"  IsHitTestVisible="True" AllowDrop="True" Focusable="True"/>
+        <Label x:Name="label_Copy" Content="Aplikacja 'Hotel System Menagement&quot; powstała jako pomysł na zarządznie hotelem mojego kolegi. &#xD;&#xA;Jest to też za razem moja pierwsza większa aplikacja napisana przeze mnie. A druga z wykorzystaniem&#xD;&#xA;baz danych. To dzieki niej poznałem różne właściwiści WPF, nauczyłem się skuteczniej programować i &#xD;&#xA;mam nadzieję, że już niedługo będę mógł zaprezentować ją na mojej pierwszej rozmowie kwalifikacyjnej &#xD;&#xA;na stanowisko junior .NET Developer." HorizontalAlignment="Left" Height="255" Margin="10,205,0,0" VerticalAlignment="Top" Width="572" Background="{x:Null}"  IsHitTestVisible="True" AllowDrop="True" Focusable="True"/>
+    </Grid>
+</Window>
